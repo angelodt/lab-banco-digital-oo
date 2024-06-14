@@ -1,3 +1,4 @@
+package br.com.angelodt.banco.interfaces;
 
 public interface IConta {
 	
@@ -8,4 +9,5 @@ public interface IConta {
 	void transferir(double valor, IConta contaDestino);
 	
 	void imprimirExtrato();
+
 }

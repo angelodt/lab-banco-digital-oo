@@ -1,3 +1,7 @@
+package br.com.angelodt.banco.negocio;
+
+import br.com.angelodt.banco.dominio.Cliente;
+import br.com.angelodt.banco.interfaces.IConta;
 
 public abstract class Conta implements IConta {
 	
@@ -41,6 +45,10 @@ public abstract class Conta implements IConta {
 
 	public double getSaldo() {
 		return saldo;
+	}
+
+	public Cliente getCliente() {
+		return cliente;
 	}
 
 	protected void imprimirInfosComuns() {
